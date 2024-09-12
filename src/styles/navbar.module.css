@@ -1,0 +1,69 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+.navbar h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff; /* White text */
+    font-family: 'Verdana', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navbar h1:hover {
+    color: #ccc; /* Slightly lighter on hover */
+}
+
+.navbar .right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar .right p {
+    position: relative;
+    font-size: 18px;
+    color: #bbb; /* Light grey text */
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .right p:hover {
+    color: #fff; /* White on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.navbar .right p:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: width 0.3s ease;
+}
+
+.navbar .right p:hover:after {
+    width: 100%; /* Underline expands on hover */
+}
+
+.navbar .right p.active {
+    color: #fff; /* White color for active state */
+    font-weight: 600;
+    font-size: 20px;
+    transform: translateY(-5px);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .right p.active:after {
+    width: 100%; /* Underline always visible for active state */
+}

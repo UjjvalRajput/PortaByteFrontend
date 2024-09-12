@@ -1,0 +1,44 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f8f9fa; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333; 
+    font-family: 'Verdana', sans-serif;
+    transition: color 0.3s ease; 
+}
+
+.center h1:hover {
+    color: black;
+}
+
+.center button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.center button:hover {
+    background-color: #333; 
+    transform: scale(1.05);
+}

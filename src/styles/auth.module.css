@@ -1,0 +1,261 @@
+/* Main page styling */
+.authpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #f5f5f5; /* Light grey background for contrast */
+    padding: 20px;
+}
+
+/* Heading styling */
+.authpage h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000; /* Black for high contrast */
+    margin-bottom: 1.5rem;
+}
+
+/* Container for inputs */
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+/* Label styling */
+.inputcontainer label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333; /* Dark grey for readability */
+    margin-bottom: 0.5rem;
+}
+
+/* Input field styling */
+.inputcontainer input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus styling */
+.inputcontainer input:focus {
+    border-color: #000; /* Black border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    outline: none;
+}
+
+/* Button styling */
+.button1 {
+    width: 100%;
+    max-width: 350px;
+    height: 50px; /* Increased height for better usability */
+    border: none;
+    border-radius: 5px;
+    background-color: #000; /* Black button */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+/* Button hover state */
+.button1:hover {
+    background-color: #333; /* Dark grey button */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Link styling */
+.authpage a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000; /* Black link */
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Link hover state */
+.authpage a:hover {
+    color: #0070f3; /* Blue link on hover */
+    text-decoration: underline;
+}
+
+/* Dropzone styling for the share page */
+.dropzone {
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+    border: 2px dashed #ccc; /* Dashed border */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* White background */
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Dropzone active state */
+.dropzone:hover, .dropzone:focus {
+    border-color: #000; /* Black border on hover */
+    background-color: #f0f0f0; /* Slightly darker background */
+}
+
+/* Dropzone text */
+.dropzone .droptext p {
+    font-size: 1rem;
+    color: #666; /* Grey text */
+    text-align: center;
+}
+/* Adjust the filecard styling */
+.filecard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure that content does not overflow */
+}
+
+/* Ensure the left section uses available space */
+.filecard .left {
+    flex-grow: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 10px; /* Add some space between text and buttons */
+    overflow: hidden; /* Hide overflowing text */
+}
+
+/* Make sure filename is properly truncated with ellipsis */
+.filecard .left .filename {
+    white-space: nowrap; /* Prevent text wrap */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+/* Right section to hold the buttons */
+.filecard .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap; /* Prevent text wrap */
+}
+
+/* Styling the buttons */
+.filecard button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filecard button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Styling the verification button */
+.verifybutton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap; /* Prevent text wrap */
+}
+
+.verifybutton:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Informational text styling */
+.infotext {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Form styling */
+.form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input container styling */
+.inputcontainer {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Input field styling */
+.inputcontainer input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #000;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus styling */
+.inputcontainer input:focus {
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Button styling */
+.button1 {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover state */
+.button1:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
